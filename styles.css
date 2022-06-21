@@ -1,0 +1,369 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(30, 30, 30);
+    margin: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, li{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    background: rgb(124, 42, 145);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo{
+    width: 50px;
+    height: 30px;
+    display: block;
+}
+
+.footer{
+    background: rgb(124, 42, 145);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items : center;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+    margin-left: 20px;
+    color: white;
+}
+
+#menuToggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+span{
+    color: white;
+}
+
+#popular-movies-section, #upcoming-movies-section, #now-playing-movies-section{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#popular-movies-section span, #upcoming-movies-section span, #now-playing-movies-section span{
+    size: 0.8em;
+}
+
+h1{
+    size: 20em;
+    color: rgb(193, 173, 209);
+    padding-top: 40px;
+    margin: 0 0;
+    padding-left: 20px;
+}
+
+.box-cartaz{
+    flex: 1 1 300px;
+    margin: 50px;
+    background:rgb(45, 45, 45);
+}
+
+#botao-pagina-pesquisa{
+    border-radius: 5px;
+    padding: 8px;
+    background-color: rgb(193, 173, 209);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.cabecalho-pesquisa h1{
+    margin: 0 0;
+}
+
+.cabecalho-pesquisa{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.tela-pesquisa{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#textoPesquisa{
+  width: 75%;
+  padding: 8px;
+  margin-right: 5px;
+  background-color: rgb(230, 219, 239);  
+}
+
+#btnPesquisa{
+  width: 20%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(124, 42, 145);
+  color: rgb(255, 255, 255);
+}
+
+#pagina-pesquisa{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.itens-pesquisados{
+    flex: 1 300px;
+    margin: 50px;
+    background:rgb(45, 45, 45);
+    justify-content: space-between;
+}
+
+.titulo{
+    color:rgb(230, 219, 239);
+    font-size: 1.1rem;
+
+}
+
+.div-detalhes-filmes-populares{
+    padding: 20px;
+}
+
+.div-detalhes-filmes-populares h1{
+    padding-bottom: 20px;
+    margin-left: 12%;
+}
+
+.box-cartaz-detalhes{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.detalhes-imagem{
+    width: 20%;
+}
+.txt-detalhes{
+    margin-left: 15px;
+    width: 54%;
+}
+
+.titulo-detalhes{
+    color:rgb(230, 219, 239);
+    font-size: 1.5rem;
+}
+
+.txtDetalhes{
+    margin-top: 400px;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:1025px){
+    .box-cartaz-detalhes{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+    
+    .detalhes-imagem{
+        width: 50%;
+        padding-bottom: 100px;
+        padding-bottom: 20px;
+    }
+    
+    .txt-detalhes{
+        margin-left: 15px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:315px){
+    .box-cartaz-detalhes{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+    
+    .detalhes-imagem{
+        width: 50%;
+        padding-bottom: 100px;
+        padding-bottom: 20px;
+    }
+    
+    .txtDetalhes{
+        font-size: 0.9em;
+    }
+
+    .titulo-detalhes{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width:600px){
+    .header{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+    }
+
+    .header nav{
+        display: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu{
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 0%;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: height 0.3s;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        -ms-transition: height 0.3s;
+        -o-transition: height 0.3s;   
+    }
+
+    .menu-icon{
+        display: block;
+        color: white;
+        width: 50px;
+        height: inherit;
+        position: absolute;
+        top: 15px;
+        right: 40px;
+        line-height: 60px;
+        height: 0%;
+        z-index: 999;
+    }
+
+    .menu li{
+      display: block;
+      width: 100%;
+      margin-left: 0px;
+      margin-bottom: 20px  
+    }
+
+    .menu li a{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu-icon i{
+        font-size: 1.9em;
+    }
+
+    #menuToggle:checked ~ label i:nth-child(2){
+        display: block;
+    }
+
+    #menuToggle:checked ~ label i:first-child{
+        display: none;
+    }
+
+    #menuToggle:not(checked) ~ label i:first-child{
+        display: block;
+    }
+
+    #menuToggle:not(checked) ~ label i:nth-child(2){
+        display: none;
+    }
+
+    #menuToggle:checked ~ ul{
+        height: 100%;
+    }
+
+    .box-cartaz{
+        margin: 0 auto;
+    }
+
+    h1{
+        font-size: 1.5em;
+        color: rgb(193, 173, 209);
+        padding-top: 90px;
+        padding-bottom: 20px;
+        margin: 0 0;
+    }
+
+    #textoPesquisa{
+        width: 65%;
+        margin-right: 5px;
+    }
+
+    .tela-pesquisa{
+        margin-bottom: 20px;
+    }
+      
+    #btnPesquisa{
+        width: 25%;
+    }
+
+    .box-cartaz-detalhes{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+    
+    .detalhes-imagem{
+        width: 90%;
+    }
+    .txt-detalhes{
+        margin-left: 15px;
+        width: 90%;
+    }
+    .div-detalhes-filmes-populares h1{
+        font-size: 1.6em;;
+        margin-top: 10%;
+    }
+
+}

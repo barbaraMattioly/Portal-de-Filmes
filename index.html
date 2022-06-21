@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de filmes 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class = "header">
+        <a href="index.html">
+            <img src="logo.png" alt="" class="logo">
+        </a>
+        <nav>
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times-circle"></i>
+            </label>
+            <ul class = "menu">
+                <li><a href="#popular-movies-section">Filmes Populares</a></li>
+                <li><a href="#upcoming-movies-section">Últimos Lançamentos</a></li>
+                <li><a href="#now-playing-movies-section">Filmes em Cartaz nos Cinemas</a></li>
+                <li>
+                    <a href="pesquisa.html">
+                       <input type="button" id="botao-pagina-pesquisa" value="Pesquisar Filme/Série 🔎"> 
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="div-filmes-populares">
+        <h1>Filmes Populares</h1>
+        <section id="popular-movies-section"></section>
+    </div>
+
+    <div class = "div-ultimos-lancamentos">
+        <h1>Últimos Lançamentos</h1>
+        <section id="upcoming-movies-section"></section> 
+    </div>
+
+    <div class = "div-filmes-em-cartaz">
+        <h1>Filmes em Cartaz nos Cinemas</h1>
+        <section id="now-playing-movies-section"></section>
+    </div>
+    
+    <footer class = "footer">
+        Copyright 2022 - Barbara Mattioly Andrade - PUC MINAS
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
