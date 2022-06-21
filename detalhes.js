@@ -21,7 +21,7 @@ function showMovie(){
         </div>
         <div class = "txt-detalhes">
             <span class="titulo-detalhes"><b>${dados.title}</b></span>
-            <span class="txtDetalhes">"<br><b>Data de Lançamento: </b>${data}"</span>
+            <span class="txtDetalhes"><br><b>Data de Lançamento: </b>${data}</span>
             <span class="txtDetalhes"><br><b>Ordem de popularidade: </b>${dados.overview}</span>
             <span class="txtDetalhes"><br><b>Avaliação: </b>${dados.vote_average}<br></span>
             <span class="txtDetalhes"><b>Linguagem Original: </b>${dados.original_language}<br></span>

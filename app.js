@@ -19,7 +19,7 @@ function showPopularMovies(){
                 <img src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="">
             </a>
             <span class="titulo"><b>${filme.title}</b></span>
-            <span class="data">"<br><b>Data de Lançamento: </b>${data}"</span>
+            <span class="data"><br><b>Data de Lançamento: </b>${data}</span>
             <span class="popularidade"><br><b>Ordem de popularidade: </b>${filme.popularity}</span>
             <span class="avaliacao"><br><b>Avaliação: </b>${filme.vote_average}<br></span>
         </div>
@@ -44,7 +44,7 @@ function showUpcomingMovies(){
                 <img src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="">
             </a>
             <span class="titulo">${filme.title}</span>
-            <span class="data">"<br><b>Data de Lançamento: </b>${data}"</span>
+            <span class="data"><br><b>Data de Lançamento: </b>${data}</span>
             <span class="popularidade"><br><b>Ordem de popularidade: </b>${filme.popularity}</span>
             <span class="avaliacao"><br><b>Avaliação: </b>${filme.vote_average}<br></span>
         </div>
@@ -69,7 +69,7 @@ function showNowPlayingMovies(){
                 <img src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="">
             </a>
             <span class="titulo"><b>${filme.title}</b></span>
-            <span class="data">"<br><b>Data de Lançamento: </b>${data}"</span>
+            <span class="data"><br><b>Data de Lançamento: </b>${data}</span>
             <span class="popularidade"><br><b>Ordem de popularidade: </b>${filme.popularity}</span>
             <span class="avaliacao"><br><b>Avaliação: </b>${filme.vote_average}<br></span>
         </div>

@@ -24,7 +24,7 @@ function exibeResultados(){
                         <img src="https://image.tmdb.org/t/p/w500${retornoPesquisa.poster_path}" alt="">
                     </a>
                     <span class="titulo"><b>${retornoPesquisa.original_title}</b></span>
-                    <span class="data">"<br><b>Data de Lançamento: </b>${data}"</span>
+                    <span class="data"><br><b>Data de Lançamento: </b>${data}</span>
                     <span class="popularidade"><br><b>Ordem de popularidade: </b>${retornoPesquisa.popularity}</span>
                     <span class="avaliacao"><br><b>Avaliação: </b>${retornoPesquisa.vote_average}<br></span>
             </div>
